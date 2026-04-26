@@ -12,6 +12,19 @@
   box-sizing: border-box;
 }
 
+header h1 {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 3px solid var(--gold); /* yellow line under title */
+  padding-bottom: 10px;
+}
+
+nav {
+  border-top: 3px solid var(--gold); /* yellow line above nav */
+  padding-top: 10px;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;

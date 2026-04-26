@@ -8,23 +8,12 @@
   --soft-navy: #1a3d6d;
 }
 
+/* RESET */
 * {
   box-sizing: border-box;
 }
 
-header h1 {
-  margin: 0 0 10px 0;
-  text-align: center;
-  font-size: 2rem;
-  border-bottom: 3px solid var(--gold); /* yellow line under title */
-  padding-bottom: 10px;
-}
-
-nav {
-  border-top: 3px solid var(--gold); /* yellow line above nav */
-  padding-top: 10px;
-}
-
+/* BODY */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -41,16 +30,26 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
+/* TITLE */
 header h1 {
-  margin: 0 0 10px 0;
+  margin: 0;
   text-align: center;
   font-size: 2rem;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--gold); /* gold line under title */
 }
 
-/* NAVIGATION */
+/* NAV BAR */
+nav {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 3px solid var(--gold); /* gold line above nav */
+}
+
+/* NAV LINKS */
 nav ul {
   display: flex;
   justify-content: center;
@@ -66,7 +65,7 @@ nav a {
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: all 0.3s;
 }
 
 nav a:hover {
@@ -88,7 +87,7 @@ section {
   padding: 25px;
   border-left: 6px solid var(--gold);
   border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
 /* HEADINGS */
@@ -104,6 +103,7 @@ h3 {
   margin-top: 0;
 }
 
+/* PARAGRAPHS */
 p {
   margin-bottom: 15px;
 }
@@ -115,7 +115,7 @@ p {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 .card h3 {
@@ -133,7 +133,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   border-radius: 6px;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: all 0.3s;
 }
 
 button:hover {
@@ -181,8 +181,9 @@ footer {
   border-top: 2px solid var(--gold);
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE */
 @media (max-width: 768px) {
+
   header h1 {
     font-size: 1.6rem;
   }
@@ -191,7 +192,6 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
   }
 
   main {
